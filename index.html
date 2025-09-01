@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SloganSmith — AI Marketing Slogan Generator</title>
+  <meta name="description" content="Generate punchy, on-brand marketing slogans with an in-browser AI toolkit—no server required."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✨</text></svg>">
+</head>
+<body>
+  <header class="container">
+    <div class="brand">
+      <div class="logo">✨</div>
+      <div>
+        <h1>SloganSmith</h1>
+        <p class="subtitle">Generative AI for marketing slogans — runs entirely in your browser.</p>
+      </div>
+    </div>
+    <div class="actions">
+      <a class="btn ghost" href="https://creativecommons.org/licenses/MIT/" target="_blank" rel="noopener">MIT License</a>
+      <a class="btn ghost" href="README.md" target="_blank" rel="noopener">Docs</a>
+      <button id="exportBtn" class="btn">Export Results</button>
+    </div>
+  </header>
+
+  <main class="container grid">
+    <section class="card controls">
+      <h2>1) Your Brief</h2>
+      <div class="field">
+        <label>Brand / Product name</label>
+        <input id="brand" placeholder="e.g., Nimbus Shoes"/>
+      </div>
+      <div class="field">
+        <label>What are you selling? (short description)</label>
+        <textarea id="desc" rows="2" placeholder="Breathable running shoes with adaptive cushioning."></textarea>
+      </div>
+      <div class="field">
+        <label>Industry</label>
+        <select id="industry"></select>
+      </div>
+      <div class="field two">
+        <div>
+          <label>Tone</label>
+          <select id="tone" multiple size="4">
+            <option value="bold">Bold</option>
+            <option value="playful">Playful</option>
+            <option value="luxury">Luxury</option>
+            <option value="friendly">Friendly</option>
+            <option value="innovative">Innovative</option>
+            <option value="eco">Eco / Ethical</option>
+            <option value="urgent">Urgent / FOMO</option>
+            <option value="trust">Trust / Authority</option>
+          </select>
+          <small>Hold Ctrl/⌘ to select multiple</small>
+        </div>
+        <div>
+          <label>Length</label>
+          <select id="length">
+            <option value="short">Short (2–4 words)</option>
+            <option value="medium" selected>Medium (4–7 words)</option>
+            <option value="long">Long (7–12 words)</option>
+          </select>
+        </div>
+      </div>
+      <div class="field two">
+        <div>
+          <label>Must‑include keywords (comma‑separated)</label>
+          <input id="mustInclude" placeholder="e.g., light, fast"/>
+        </div>
+        <div>
+          <label>Avoid words (comma‑separated)</label>
+          <input id="avoid" placeholder="e.g., cheap"/>
+        </div>
+      </div>
+      <div class="field two">
+        <div>
+          <label>Alliteration (optional, choose a starting letter)</label>
+          <input id="alliteration" maxlength="1" placeholder="e.g., F"/>
+        </div>
+        <div>
+          <label>Rhyme ending (optional, last 2–3 letters)</label>
+          <input id="rhyme" maxlength="4" placeholder="e.g., -ite"/>
+        </div>
+      </div>
+      <div class="field two">
+        <div>
+          <label>How many slogans?</label>
+          <input id="count" type="number" min="1" max="50" value="12"/>
+        </div>
+        <div class="spacer"></div>
+      </div>
+      <div class="btnrow">
+        <button id="generateBtn" class="btn primary">Generate Slogans</button>
+        <button id="surpriseBtn" class="btn ghost">Surprise Me</button>
+        <button id="clearBtn" class="btn ghost">Clear</button>
+      </div>
+    </section>
+
+    <section class="card results">
+      <h2>2) Results <span id="resultCount" class="muted"></span></h2>
+      <div class="toolbar">
+        <input id="search" placeholder="Filter results..."/>
+        <select id="sort">
+          <option value="score">Sort by Punch Score</option>
+          <option value="length">Sort by Length</option>
+          <option value="alpha">Sort A→Z</option>
+          <option value="custom">Original Order</option>
+        </select>
+      </div>
+      <div id="output" class="output"></div>
+    </section>
+
+    <aside class="card dataset">
+      <h2>3) Dataset</h2>
+      <p class="muted">This tool combines a curated wordbank with a small synthetic slogans dataset to build a lightweight, in‑browser language model (no server or tracking). You can replace or extend the dataset using the files in <code>/data</code>.</p>
+      <div class="dataset-actions">
+        <button id="showDataset" class="btn ghost">Preview Wordbanks</button>
+        <label class="btn ghost">
+          Load Custom CSV
+          <input id="csvLoader" type="file" accept=".csv" hidden>
+        </label>
+      </div>
+      <details>
+        <summary>How it works (nerdy)</summary>
+        <ol>
+          <li>We build a word‑level Markov chain from example slogans in <code>slogans.csv</code> (and any CSV you import).</li>
+          <li>We graft templates using power words & industry terms to bias generations.</li>
+          <li>We score candidates for punchiness (brevity, power words, rhythmic endings), then enforce constraints (keywords, avoids, rhyme/alliteration).</li>
+        </ol>
+      </details>
+    </aside>
+  </main>
+
+  <footer class="container footer">
+    <p></p>
+  </footer>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>

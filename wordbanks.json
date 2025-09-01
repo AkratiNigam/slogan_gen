@@ -1,0 +1,261 @@
+{
+  "power_words": [
+    "epic",
+    "instant",
+    "effortless",
+    "unleash",
+    "ignite",
+    "limitless",
+    "next‑gen",
+    "smart",
+    "seamless",
+    "premium",
+    "crafted",
+    "bold",
+    "clean",
+    "fresh",
+    "pure",
+    "secure",
+    "trusted",
+    "swift",
+    "ultra",
+    "lightweight",
+    "turbo",
+    "hyper",
+    "dynamic",
+    "magic",
+    "rapid",
+    "brilliant",
+    "prime",
+    "pro",
+    "vivid",
+    "vital",
+    "fearless",
+    "elevate",
+    "unlock",
+    "win",
+    "save",
+    "discover",
+    "boost",
+    "max",
+    "super",
+    "hero",
+    "legendary",
+    "breakthrough",
+    "remarkable",
+    "innovative"
+  ],
+  "verbs": [
+    "drive",
+    "build",
+    "grow",
+    "create",
+    "launch",
+    "energize",
+    "elevate",
+    "spark",
+    "boost",
+    "shape",
+    "scale",
+    "simplify",
+    "supercharge",
+    "power",
+    "uncover",
+    "unlock",
+    "deliver",
+    "transform",
+    "refresh",
+    "redefine"
+  ],
+  "outcomes": [
+    "Own Your Moment",
+    "Make It Happen",
+    "Feel The Difference",
+    "Built For You",
+    "Results That Stick",
+    "Ready When You Are",
+    "Built To Last",
+    "Do More With Less",
+    "Performance You Feel"
+  ],
+  "negatives": [
+    "noise",
+    "clutter",
+    "hassle",
+    "waste",
+    "friction",
+    "guesswork",
+    "downtime",
+    "stress"
+  ],
+  "industries": [
+    {
+      "id": "generic",
+      "name": "General / Any",
+      "keywords": [
+        "value",
+        "quality",
+        "service",
+        "choice",
+        "everyday",
+        "premium",
+        "save"
+      ],
+      "benefits": [
+        "more value",
+        "better results",
+        "effortless wins",
+        "daily delight"
+      ],
+      "audience": [
+        "everyone",
+        "modern life",
+        "busy people"
+      ]
+    },
+    {
+      "id": "fitness",
+      "name": "Fitness & Wellness",
+      "keywords": [
+        "fit",
+        "energy",
+        "strength",
+        "recovery",
+        "move",
+        "motion",
+        "sweat"
+      ],
+      "benefits": [
+        "stronger bodies",
+        "faster recovery",
+        "daily energy",
+        "healthy habits"
+      ],
+      "audience": [
+        "athletes",
+        "everyday movers",
+        "fitness starters"
+      ]
+    },
+    {
+      "id": "food",
+      "name": "Food & Beverage",
+      "keywords": [
+        "fresh",
+        "flavor",
+        "roast",
+        "brew",
+        "taste",
+        "crisp",
+        "juicy"
+      ],
+      "benefits": [
+        "bold flavor",
+        "fresh taste",
+        "feel‑good fuel",
+        "moments to savor"
+      ],
+      "audience": [
+        "food lovers",
+        "busy mornings",
+        "treat seekers"
+      ]
+    },
+    {
+      "id": "tech",
+      "name": "Software & Tech",
+      "keywords": [
+        "cloud",
+        "scale",
+        "secure",
+        "data",
+        "flow",
+        "sync",
+        "automation"
+      ],
+      "benefits": [
+        "clean data",
+        "faster workflows",
+        "smarter teams",
+        "secure scale"
+      ],
+      "audience": [
+        "builders",
+        "startups",
+        "enterprises"
+      ]
+    },
+    {
+      "id": "eco",
+      "name": "Eco / Home",
+      "keywords": [
+        "green",
+        "clean",
+        "reuse",
+        "renew",
+        "earth",
+        "pure",
+        "natural"
+      ],
+      "benefits": [
+        "clean homes",
+        "lighter footprint",
+        "planet‑first living",
+        "zero‑waste wins"
+      ],
+      "audience": [
+        "families",
+        "eco‑minded",
+        "modern homes"
+      ]
+    },
+    {
+      "id": "fashion",
+      "name": "Fashion & Apparel",
+      "keywords": [
+        "style",
+        "fit",
+        "comfort",
+        "bold",
+        "soft",
+        "shine",
+        "trend"
+      ],
+      "benefits": [
+        "confident style",
+        "all‑day comfort",
+        "signature looks",
+        "effortless fit"
+      ],
+      "audience": [
+        "trendsetters",
+        "minimalists",
+        "everyday wearers"
+      ]
+    },
+    {
+      "id": "finance",
+      "name": "Finance & Fintech",
+      "keywords": [
+        "save",
+        "grow",
+        "invest",
+        "secure",
+        "smart",
+        "credit",
+        "cash"
+      ],
+      "benefits": [
+        "smarter money",
+        "secure growth",
+        "simpler finance",
+        "wealth on autopilot"
+      ],
+      "audience": [
+        "investors",
+        "savers",
+        "founders"
+      ]
+    }
+  ]
+}
