@@ -1,4 +1,4 @@
-# SloganSmith — AI Marketing Slogan Generator (Static Website)
+# SloganGen — AI Marketing Slogan Generator (Static Website)
 
 A lightweight, privacy‑friendly slogan generator that runs entirely in the browser using HTML/CSS/JS. No server, no tracking. Drop the folder on any static host (GitHub Pages, Netlify, Vercel, S3).
 
