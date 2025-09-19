@@ -1,6 +1,6 @@
 # SloganGen — AI Marketing Slogan Generator (Static Website)
 
-A lightweight, privacy‑friendly slogan generator that runs entirely in the browser using HTML/CSS/JS. No server, no tracking. Drop the folder on any static host (GitHub Pages, Netlify, Vercel, S3).
+A lightweight, privacy‑friendly slogan generator that runs entirely in the browser using HTML/CSS/JS.
 
 ## Features
 - Client‑side Markov chain + template fusion for high‑quality slogans
@@ -8,7 +8,6 @@ A lightweight, privacy‑friendly slogan generator that runs entirely in the bro
 - Scoring & sorting by "Punch Score"
 - Import your own CSV dataset to bias the model
 - Export generated results to CSV
-- MIT licensed
 
 ## Structure
 ```
@@ -42,6 +41,3 @@ slogan,industry
 "Scale fast, sleep well",tech
 ```
 Use industries: generic, fitness, food, tech, eco, fashion, finance — or define your own IDs and reference them in your slogans.
-
-## License
-MIT — do whatever, but no warranty.
